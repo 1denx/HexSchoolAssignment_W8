@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap');
+
+
+body {
+    font-family: 'Noto Sans TC', sans-serif, 'Shrikhand', cursive;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
