@@ -1,0 +1,216 @@
+.bg-img {
+    background-image: linear-gradient(180deg, #7000FF 0%, #11002D 100%), url("../images/carousel_background.png"), radial-gradient(50% 50% at 50% 50%, #300871 0%, #000000 100%);
+    background-size: 100% 2200px, 948px auto, 100% 1050px;
+    background-position: top, bottom left, bottom right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 3250px;
+    top: 0;
+    z-index: -1;
+
+    @include pc {
+        background-image: url("../images/home_background.png"), url("../images/carousel_background.png"), radial-gradient(50% 50% at 50% 50%, #300871 0%, #000000 100%);
+        background-size: 100% 960px, 948px auto, 100% 1080px;
+        background-position: top, bottom left, bottom right;
+        background-repeat: no-repeat;
+        height: 2040px;
+    }
+}
+
+.hero-pic {
+    width: 196px;
+}
+
+.rotate {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.title-position {
+    @include pc {
+        position: relative;
+    }
+
+    .title-absolute {
+        @include pc {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+    }
+}
+
+.hero-title {
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 0;
+    height: 48px;
+    overflow: hidden;
+
+    h2::after {
+        content: "";
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+.hero-desc {
+    letter-spacing: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.alpha-link {
+    &:hover {
+        opacity: 1;
+    }
+
+    .alpha-picL {
+        width: 100%;
+        object-fit: cover;
+
+        @include pc {
+            height: 676px;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 16px 8px #8F00FFCC;
+        }
+    }
+
+    .alpha-pic {
+        width: 100%;
+        object-fit: cover;
+
+        @include pad {
+            height: 100%;
+        }
+
+        @include pc {
+            height: 580px;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 16px 8px #8F00FFCC;
+        }
+    }
+}
+
+.alpha-name {
+    width: 100%;
+    text-align: center;
+    top: 16px;
+}
+
+.carousel-wrap {
+    position: relative;
+
+    .carousel-item {
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translate(0, -50%);
+        display: flex;
+        flex-direction: column;
+
+
+        @include pad {
+            left: -40px;
+            align-items: end;
+        }
+    }
+}
+
+.alphabox {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+}
+
+.button-prev,
+.button-next {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translate(0, -50%);
+}
+
+.arrow {
+    width: 90px;
+}
+
+.more-link {
+    width: 132px;
+    height: 132px;
+}
+
+.circle {
+    position: relative;
+    width: 132px;
+    height: 132px;
+    border-radius: 100vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 100vmax;
+}
+
+.more-txt {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.more-txt span {
+    position: absolute;
+    top: -15px;
+    left: 65px;
+    transform-origin: 0 80px;
+}
+
+.comment-swiper {
+    overflow: inherit;
+}
+
+.swiper-item {
+    width: 416px;
+    height: 416px;
+}
+
+/* 滾動條可拖曳區塊的顏色 */
+.swiper-scrollbar-drag {
+    background: #fff;
+}
+
+/* 整個滾動條的背景顏色 */
+.swiper-scrollbar {
+    background: #FFFFFF33;
+}

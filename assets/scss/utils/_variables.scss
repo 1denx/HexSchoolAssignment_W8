@@ -37,7 +37,7 @@ $grays: (
 // scss-docs-start color-variables
 $blue: #0d6efd !default;
 $indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
+$purple: #AD93CF !default; //#6f42c1 !default; custom
 $pink: #d63384 !default;
 $red: #dc3545 !default;
 $orange: #fd7e14 !default;
@@ -293,9 +293,11 @@ $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: #E9E2F3 !default; //$gray-100 !default;
+$white: #fff !default; //custom
 $dark: $black !default; //$gray-900 !default;
+$purple: $purple !default; //custom
 $primary-dark1: #380C7E !default; //custom
-$primary-dark1: #1F0F39 !default; //custom
+$primary-dark2: #1F0F39 !default; //custom
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -307,7 +309,11 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "light": $light,
+  "white": $white,
+  //custom
   "dark": $dark,
+  "purple": $purple,
+  //custom
   "primary-dark1": $primary-dark1,
   //custom
   "primary-dark2": $primary-dark2 //custom
@@ -391,14 +397,22 @@ $spacers: (
   // 42
   12: $spacer * 3,
   // 48
+  14: $spacer * 3.5,
+  //56
   15: $spacer * 3.75,
   // 60
   16: $spacer * 4,
   // 64
   18: $spacer * 4.5,
   // 72
+  19: $spacer * 4.75,
+  // 76
   20: $spacer *5,
   // 80
+  34: $spacer *8.5,
+  // 136
+  40: $spacer *10,
+  // 160
   ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -425,7 +439,7 @@ $body-text-align: null !default;
 //
 // Style anchor elements.
 
-$link-color: $primary !default;
+$link-color: $dark !default; //$primary !default; custom
 $link-decoration: underline !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
@@ -560,6 +574,7 @@ $aspect-ratios: (
 $font-family-sans-serif: 'Noto Sans TC',
   sans-serif,
   'Shrikhand',
+  'Saira Extra Condensed',
   cursive !default; //system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular,
   Menlo,
@@ -595,9 +610,10 @@ $line-height-lg: 2 !default;
 $h1-font-size: $font-size-base * 6 !default; //96
 $h2-font-size: $font-size-base * 4 !default; //64
 $h3-font-size: $font-size-base * 3 !default; //48
-$h4-font-size: $font-size-base * 1.25 !default; //20
-$h5-font-size: $font-size-base !default; //16
-$h6-font-size: $font-size-base * .875 !default; //14
+$h4-font-size: $font-size-base * 2 !default; //32
+$h5-font-size: $font-size-base * 1.25 !default; //20
+$h6-font-size: $font-size-base !default; //16
+$h7-font-size: $font-size-base * .875 !default; //14
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -607,7 +623,9 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size) !default;
+  6: $h6-font-size,
+  7: $h7-font-size,
+  ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
@@ -1084,8 +1102,8 @@ $zindex-toast: 1090 !default;
 // Navs
 
 // scss-docs-start nav-variables
-$nav-link-padding-y: .5rem !default;
-$nav-link-padding-x: 1rem !default;
+$nav-link-padding-y: 0 !default; //.5rem !default;
+$nav-link-padding-x: 0 !default; //1rem !default;
 $nav-link-font-size: null !default;
 $nav-link-font-weight: null !default;
 $nav-link-color: var(--#{$prefix}link-color) !default;
@@ -1112,7 +1130,7 @@ $nav-pills-link-active-bg: $component-active-bg !default;
 // Navbar
 
 // scss-docs-start navbar-variables
-$navbar-padding-y: $spacer * .5 !default;
+$navbar-padding-y: 0 !default; //$spacer * .5 !default;
 $navbar-padding-x: null !default;
 
 $navbar-nav-link-padding-x: .5rem !default;
@@ -1129,15 +1147,15 @@ $navbar-toggler-padding-y: .25rem !default;
 $navbar-toggler-padding-x: .75rem !default;
 $navbar-toggler-font-size: $font-size-lg !default;
 $navbar-toggler-border-radius: $btn-border-radius !default;
-$navbar-toggler-focus-width: $btn-focus-width !default;
+$navbar-toggler-focus-width: 0 !default; //$btn-focus-width !default; //custom
 $navbar-toggler-transition: box-shadow .15s ease-in-out !default;
 
-$navbar-light-color: rgba($black, .55) !default;
+$navbar-light-color: $white !default; //rgba($black, .55) !default; //custom
 $navbar-light-hover-color: rgba($black, .7) !default;
 $navbar-light-active-color: rgba($black, .9) !default;
 $navbar-light-disabled-color: rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-light-toggler-border-color: rgba($black, .1) !default;
+$navbar-light-toggler-border-color: 0 !default; //rgba($black, .1) !default; //custom
 $navbar-light-brand-color: $navbar-light-active-color !default;
 $navbar-light-brand-hover-color: $navbar-light-active-color !default;
 // scss-docs-end navbar-variables

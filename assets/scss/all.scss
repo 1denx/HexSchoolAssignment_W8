@@ -1,9 +1,9 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
-@import "../../node_modules/bootstrap";
+@import './utils/mixin';
+@import './vendors/bootstrap';
 
 @import './base/base';
-
+@import './utils/utils';
+@import './base/typography';
 
 
 @import './layout/header.scss';
@@ -11,3 +11,8 @@
 
 
 @import './pages/index.scss';
+@import './pages/product';
+@import './pages/about';
+@import './pages/news';
+@import './pages/faq';
+@import './pages/contact';

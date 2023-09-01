@@ -5,15 +5,336 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AIPHABOX</title>
+  <title>ALPHABOX</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body class="position-relative">
   <%- include('./layout/header'); -%>
+    <div class="bg-img position-absolute"></div>
+    <main>
+      <section class="container-fluid border-top border-white">
+        <div class="row my-7 my-lg-14">
+          <div class="col-lg-3 d-flex flex-column justify-content-end">
+            <p class="text-white border-bottom border-white py-2  d-lg-block d-none">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+          </div>
+          <div class="col-lg-6 col-12 rotate d-flex justify-content-center align-items-center order-1
+           order-lg-0">
+            <img class="hero-pic" src="../assets/images/circle.png" alt="alphabox路徑文字">
+          </div>
+          <div class="col-lg-3 col-12 d-flex flex-column justify-content-between">
+            <p class="text-white border-top border-white py-2 mb-8">ALPHABOX+ STUDIO</p>
+            <p class="text-purple d-lg-block d-none">Copyright © 2023 Hexschool.</p>
+          </div>
+        </div>
 
+        <div class="row title-position">
+          <div class="col-xl-6 col-12 title-absolute d-flex flex-column align-items-center px-4 mx-auto mb-8">
+            <div class="hero-title">
+              <h2 class="txt-shrikhand fs-4 text-white">A L P H A B O X +</h2>
+            </div>
+            <p class="hero-desc text-white">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+          </div>
+        </div>
 
+        <div class="row g-lg-8 g-md-6 g-4 d-flex align-items-end">
+          <div class="col-lg-3 col-md-6 col-12 position-relative">
+            <p class="position-absolute alpha-name fs-4 text-white txt-shrikhand italic">Diane</p>
+            <a class="alpha-link d-flex" href="#">
+              <picture class="mx-auto">
+                <source media="(min-width: 1200px)" srcset="../assets/images/diane.png" />
+                <source media="(min-width: 767px)" srcset="../assets/images/diane_square1.png" />
+                <img class="alpha-picL" src="../assets/images/diane_square1.png" alt="Sample" />
+              </picture>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 position-relative">
+            <p class="position-absolute alpha-name fs-4 text-white txt-shrikhand italic">Flex</p>
+            <a class="alpha-link d-flex" href="#">
+              <picture class="mx-auto">
+                <source media="(min-width: 1200px)" srcset="../assets/images/felix.png" />
+                <source media="(min-width: 767px)" srcset="../assets/images/felix_square1.png" />
+                <img class="alpha-pic" src="../assets/images/felix_square1.png" alt="Sample" />
+              </picture>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 position-relative">
+            <p class="position-absolute alpha-name fs-4 text-white txt-shrikhand italic">Karina</p>
+            <a class="alpha-link d-flex" href="#">
+              <picture class="mx-auto">
+                <source media="(min-width: 1200px)" srcset="../assets/images/karina.png" />
+                <source media="(min-width: 767px)" srcset="../assets/images/karina_square1.png" />
+                <img class="alpha-pic" src="../assets/images/karina_square1.png" alt="Sample" />
+              </picture>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 position-relative">
+            <p class="position-absolute alpha-name fs-4 text-white txt-shrikhand italic">Vito</p>
+            <a class="alpha-link d-flex" href="#">
+              <picture class="mx-auto">
+                <source media="(min-width: 1200px)" srcset="../assets/images/vito.png" />
+                <source media="(min-width: 767px)" srcset="../assets/images/vito_square1.png" />
+                <img class="alpha-picL" src="../assets/images/vito_square1.png" alt="Sample" />
+              </picture>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid">
+        <div class="linear-row mt-8 mt-lg-10"></div>
+        <h3 class="text-white mt-4 mt-lg-2 pb-5 pb-lg-4 border-bottom border-white">什麼是</br>ALPHABOX+</h3>
+        <div class="row d-flex justify-content-between">
+          <div class="col-1 position-relative d-none d-md-block">
+            <a class="button-prev">
+              <img src="../assets/images/line_start_arrow_notch.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-9">
+            <div class="swiper carousel-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide carousel-wrap mt-4 mb-8 my-md-8">
+                  <div class="carousel-item">
+                    <h3 class="fs-1 txt-shrikhand text-white">01</h3>
+                    <h4 class="text-white mb-md-4">立體投影技術</h4>
+                    <p class="text-white">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                  </div>
+                  <picture class="mx-auto">
+                    <source media="(min-width: 1200px)" srcset="../assets/images/carousel.png" />
+                    <source media="(min-width: 767px)" srcset="../assets/images/carousel_mobile.png" />
+                    <img class="alphabox" src="../assets/images/carousel_mobile.png" alt="">
+                  </picture>
+                </div>
+                <div class="swiper-slide carousel-wrap mt-4 mt-md-8">
+                  <div class="carousel-item">
+                    <h3 class="fs-1 txt-shrikhand text-white">02</h3>
+                    <h4 class="text-white mb-md-4">立體投影技術</h4>
+                    <p class="text-white">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                  </div>
+                  <img class="alphabox" src="../assets/images/projection-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide carousel-wrap mt-4 mt-md-8">
+                  <div class="carousel-item">
+                    <h3 class="fs-1 txt-shrikhand text-white">03</h3>
+                    <h4 class="text-white mb-md-4">立體投影技術</h4>
+                    <p class="text-white">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                  </div>
+                  <img class="alphabox" src="../assets/images/projection-2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 position-relative d-none d-md-block">
+            <a class="button-next">
+              <img src="../assets/images/line_end_arrow_notch.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="linear-reverse mb-8 mb-lg-10">
+
+        </div>
+      </section>
+
+      <section class="radiation-bg-gradient3">
+        <div class="container">
+          <h2 class="fs-3 text-white pt-15 pt-md-40 mb-8 mb-md-10">最新消息</h2>
+          <div class="row">
+
+            <div class="col-12 text-white py-8 py-md-10 border-top border-bottom border-white">
+              <div class="d-flex mb-2">
+                <span class="material-symbols-outlined me-4">emergency</span>
+                <p class="txt-spacing-m">2023.06.30</p>
+              </div>
+              <h5 class="txt-spacing-m mb-3">產品升級公告</h5>
+              <div class="row d-flex justify-content-between">
+                <div class="col-md-9 col-12">
+                  <p>榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！
+                  </p>
+                </div>
+                <div class="col-md-2 col-12">
+                  <a href="#">
+                    <img src="../assets/images/line_end_arrow_notch.png" alt="end_arrow">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 border-bottom border-md-end border-white">
+              <div class="text-white py-8 py-md-10">
+                <div class="d-flex mb-2">
+                  <span class="material-symbols-outlined me-4">emergency</span>
+                  <p class="txt-spacing-m">2023.06.30</p>
+                </div>
+                <h5 class="txt-spacing-m mb-3">限時優惠活動</h5>
+                <p class="mb-3">為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！
+                </p>
+                <a href="#">
+                  <img class="arrow" src="../assets/images/line_end_arrow_notch.png" alt="end_arrow">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6 border-bottom border-white">
+              <div class="text-white py-8 py-md-10">
+                <div class="d-flex mb-2">
+                  <span class="material-symbols-outlined me-4">emergency</span>
+                  <p class="txt-spacing-m">2023.04.18</p>
+                </div>
+                <h5 class="txt-spacing-m mb-3">新功能上線</h5>
+                <p class="mb-3">為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。
+                </p>
+                <a href="#">
+                  <img class="arrow" src="../assets/images/line_end_arrow_notch.png" alt="end_arrow">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center mt-10 mt-md-19 mb-20 mb-md-40">
+            <a class="more-link" href="#">
+              <div class="circle">
+                <div class="more-title text-white">查看更多</div>
+                <p class="more-txt text-white">A L P H A B O X + A L P H A B O X + </p>
+              </div>
+            </a>
+          </div>
+          <div class="d-flex flex-row-reverse justtify-content-end">
+            <p class="text-white mb-10 d-none d-md-block">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="radiation-bg-gradient2 pt-15 pt-md-40 pb-20 pb-md-10">
+          <div class="container">
+            <div class="row">
+              <div class="col col-md-5">
+                <h2 class="fs-3 fw-bold text-white mb-4 txt-spacing-m">使用分享</h2>
+                <div class="text-white fw-bold">
+                  <span class="me-1">01</span>
+                  <span class="me-1">-</span>
+                  <span>04</span>
+                </div>
+              </div>
+              <div class="col col-md-7">
+                <p class="text-white">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+              </div>
+            </div>
+            <div class="mt-6 mt-md-10 mb-4 mb-md-6 d-flex">
+              <span class="material-symbols-outlined text-white favicon">emergency</span>
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="overflow-hidden">
+            <div class="container">
+              <div class="swiper comment-swiper">
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide swiper-item col col-4 d-flex flex-column justify-content-between bg-primary-dark1 p-6 p-md-10">
+                    <div>
+                      <p class="text-white mb-8 d-flex align-items-center">Zona
+                        <span
+                          class="material-symbols-outlined fill-icon ball-s text-white px-2">fiber_manual_record</span>
+                        Taipei
+                      </p>
+                      <p class="text-white text-justify">
+                        ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+                      </p>
+                    </div>
+
+                    <div class="text-white d-flex align-items-center">
+                      <span class="material-symbols-outlined fill-icon ball-l text-white">fiber_manual_record</span>
+                      <span
+                        class="material-symbols-outlined fill-icon ball-l text-white pe-4">fiber_manual_record</span>
+                      ALPHABOX+ Dianne
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide swiper-item col col-4 d-flex flex-column justify-content-between bg-white p-6 p-md-10">
+                    <div>
+                      <p class="text-dark mb-8 d-flex align-items-center">
+                        Lin
+                        <span
+                          class="material-symbols-outlined fill-icon ball-s text-dark px-2">fiber_manual_record</span>
+                        Chiayi
+                      </p>
+                      <p class="text-dark text-justify">
+                        非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。
+                      </p>
+                    </div>
+
+                    <div class="text-dark d-flex align-items-center">
+                      <span class="material-symbols-outlined fill-icon ball-l text-dark">fiber_manual_record</span>
+                      <span class="material-symbols-outlined fill-icon ball-l text-dark pe-4">fiber_manual_record</span>
+                      ALPHABOX+ Felix
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide swiper-item col col-4 d-flex flex-column justify-content-between bg-primary-dark1 p-6 p-md-10">
+                    <div>
+                      <p class="text-white mb-8 d-flex align-items-center">
+                        云
+                        <span
+                          class="material-symbols-outlined fill-icon ball-s text-white px-2">fiber_manual_record</span>
+                        Taipei
+                      </p>
+                      <p class="text-white text-justify">
+                        我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！
+                      </p>
+                    </div>
+
+                    <div class="text-white d-flex align-items-center">
+                      <span class="material-symbols-outlined fill-icon ball-l text-white">fiber_manual_record</span>
+                      <span
+                        class="material-symbols-outlined fill-icon ball-l text-white pe-4">fiber_manual_record</span>
+                      ALPHABOX+ Dianne
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide swiper-item col col-4 d-flex flex-column justify-content-between bg-white p-6 p-md-10">
+                    <div>
+                      <p class="text-dark mb-8 d-flex align-items-center">
+                        Zichi
+                        <span
+                          class="material-symbols-outlined fill-icon ball-s text-dark px-2">fiber_manual_record</span>
+                        Kaohsiung
+                      </p>
+                      <p class="text-dark text-justify">
+                        讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！
+                      </p>
+                    </div>
+
+                    <div class="text-dark d-flex align-items-center">
+                      <span class="material-symbols-outlined fill-icon ball-l text-dark">fiber_manual_record</span>
+                      <span class="material-symbols-outlined fill-icon ball-l text-dark pe-4">fiber_manual_record</span>
+                      ALPHABOX+ Vito
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Scrollbar -->
+              <div class="row align-items-center mt-5 mb-34">
+                <div class="col-8">
+                  <div class="swiper-scrollbar position-static"></div>
+                </div>
+                <div class="col-1">
+                  <p class="mb-0 text-white">SCROLL</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="container d-none d-md-block">
+            <p class="text-white">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </main>
     <%- include('./layout/footer'); -%>
-
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <script type="module" src="../main.js"></script>
 </body>
 

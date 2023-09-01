@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    @include pc {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+
+    @include pc {
+        flex-direction: row-reverse;
+        gap: 24px;
+    }
+}
+
+.footer-logo {
+    @include pc {
+        font-style: italic;
+    }
+}
+
+.copyright {
+    white-space: nowrap;
+}
