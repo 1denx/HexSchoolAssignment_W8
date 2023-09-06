@@ -1,18 +1,19 @@
-@import './utils/mixin';
-@import './vendors/bootstrap';
+@import "./utils/mixin";
+@import "./vendors/bootstrap";
 
-@import './base/base';
-@import './utils/utils';
-@import './base/typography';
+@import "./base/base";
+@import "./utils/utils";
+@import "./base/typography";
 
+@import "./component/button";
+@import "./component/swiper";
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
-
-@import './pages/index.scss';
-@import './pages/product';
-@import './pages/about';
-@import './pages/news';
-@import './pages/faq';
-@import './pages/contact';
+@import "./pages/index.scss";
+@import "./pages/product";
+@import "./pages/about";
+@import "./pages/news";
+@import "./pages/faq";
+@import "./pages/contact";

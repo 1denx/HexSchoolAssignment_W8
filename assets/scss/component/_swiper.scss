@@ -1,0 +1,21 @@
+.comment-swiper {
+  overflow: inherit;
+}
+
+.swiper-item {
+  width: 416px;
+  height: 416px;
+}
+.commit-item {
+  height: 375px;
+}
+
+/* 滾動條可拖曳區塊的顏色 */
+.swiper-scrollbar-drag {
+  background: #fff;
+}
+
+/* 整個滾動條的背景顏色 */
+.swiper-scrollbar {
+  background: #ffffff33;
+}

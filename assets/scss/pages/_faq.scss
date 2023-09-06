@@ -1,0 +1,9 @@
+.dashed {
+  border-bottom: 2px dashed #fff;
+}
+.item-link {
+  border-bottom: 1px solid transparent;
+  &:hover {
+    border-bottom: 1px solid #1f0f39;
+  }
+}

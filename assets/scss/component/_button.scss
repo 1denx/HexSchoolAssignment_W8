@@ -1,0 +1,7 @@
+.button-prev,
+.button-next {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translate(0, -50%);
+}
