@@ -328,7 +328,7 @@ $theme-colors: (
   //custom
   "primary-dark1": $primary-dark1,
   //custom
-  "primary-dark2": $primary-dark2 //custom,,,,,,,,,,,,,,,,,,,,,,,,,,
+  "primary-dark2": $primary-dark2 //custom,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -1074,8 +1074,8 @@ $form-file-button-hover-bg: shade-color($form-file-button-bg, 5%) !default;
 // scss-docs-end form-file-variables
 
 // scss-docs-start form-floating-variables
-$form-floating-height: null !default; //add(3.5rem, $input-height-border) !default;
-$form-floating-line-height: null !default; //1.25 !default;
+$form-floating-height: add(3.5rem, $input-height-border) !default;
+$form-floating-line-height: 1.25 !default;
 $form-floating-padding-x: 1rem !default; //$input-padding-x !default;
 $form-floating-padding-y: 0.5rem !default; //1rem !default;
 $form-floating-input-padding-t: 1.625rem !default;

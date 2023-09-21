@@ -24,17 +24,18 @@
       <section class="container-fluid border-top border-white">
         <div class="row my-7 my-lg-14">
           <div class="col-lg-3 d-flex flex-column justify-content-end">
-            <p
+            <a
               class="text-white border-bottom border-white py-2 d-lg-block d-none"
+              href="#"
             >
               最新消息！新版本 v15.4 釋出，搶先體驗！
-            </p>
+            </a>
           </div>
           <div
-            class="col-lg-6 col-12 rotate d-flex justify-content-center align-items-center order-1 order-lg-0"
+            class="col-lg-6 col-12 d-flex justify-content-center align-items-center order-1 order-lg-0"
           >
             <img
-              class="hero-pic"
+              class="hero-pic rotate"
               src="../assets/images/circle.png"
               alt="alphabox路徑文字"
             />
@@ -64,7 +65,7 @@
           </div>
         </div>
 
-        <div class="row g-lg-8 g-md-6 g-4 d-flex align-items-end">
+        <div class="row g-md-6 g-4 align-items-end">
           <div class="col-lg-3 col-md-6 col-12 position-relative">
             <p
               class="position-absolute alpha-name fs-4 text-white txt-shrikhand italic"
@@ -167,7 +168,7 @@
       <section class="container-fluid">
         <div class="linear-row mt-8 mt-lg-10"></div>
         <h3
-          class="text-white mt-4 mt-lg-2 pb-5 pb-lg-4 border-bottom border-white"
+          class="fw-bold text-white mt-4 mt-lg-2 pb-5 pb-lg-4 border-bottom border-white txt-spacing-m"
         >
           什麼是<br />ALPHABOX+
         </h3>
@@ -182,7 +183,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide carousel-wrap mt-4 mb-8 my-md-8">
                   <div class="carousel-item">
-                    <h3 class="fs-1 txt-shrikhand text-white">01</h3>
+                    <span class="fs-1 txt-shrikhand text-white">01</span>
                     <h4 class="text-white mb-md-4">立體投影技術</h4>
                     <p class="text-white">
                       透過高科技立體投影技術，讓您感受真實的科技世界。
@@ -206,7 +207,7 @@
                 </div>
                 <div class="swiper-slide carousel-wrap mt-4 mt-md-8">
                   <div class="carousel-item">
-                    <h3 class="fs-1 txt-shrikhand text-white">02</h3>
+                    <span class="fs-1 txt-shrikhand text-white">02</span>
                     <h4 class="text-white mb-md-4">立體投影技術</h4>
                     <p class="text-white">
                       透過高科技立體投影技術，讓您感受真實的科技世界。
@@ -220,7 +221,7 @@
                 </div>
                 <div class="swiper-slide carousel-wrap mt-4 mt-md-8">
                   <div class="carousel-item">
-                    <h3 class="fs-1 txt-shrikhand text-white">03</h3>
+                    <span class="fs-1 txt-shrikhand text-white">03</span>
                     <h4 class="text-white mb-md-4">立體投影技術</h4>
                     <p class="text-white">
                       透過高科技立體投影技術，讓您感受真實的科技世界。
@@ -666,20 +667,19 @@
                   <input
                     type="email"
                     class="form-control rounded-0"
-                    id="floatingInput"
+                    id="email"
                     placeholder="EMAIL"
                   />
-                  <label for="floatingInput">EMAIL</label>
+                  <label for="email">EMAIL</label>
                 </div>
-                <div class="d-flex flex-column">
-                  <label for="comment"></label>
+                <div class="form-floating">
                   <textarea
-                    class="comment"
+                    class="form-control rounded-0"
                     id="comment"
-                    cols="30"
-                    rows="10"
+                    style="height: 100px"
                     placeholder="COMMENTS"
                   ></textarea>
+                  <label for="comment">COMMENTS</label>
                 </div>
                 <div class="row d-flex justify-content-end">
                   <div class="col-12 col-md-7 mt-4">

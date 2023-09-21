@@ -112,9 +112,9 @@
 }
 
 .alpha-name {
-  width: 100%;
-  text-align: center;
-  top: 16px;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .carousel-wrap {
@@ -199,11 +199,6 @@
 .line {
   width: 124px;
   border: 6px solid #fff;
-}
-.comment {
-  resize: none;
-  height: 120px;
-  padding: 8px 0 8px 16px;
 }
 
 // alpha-pic
